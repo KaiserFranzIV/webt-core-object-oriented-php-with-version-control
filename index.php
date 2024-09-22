@@ -7,6 +7,15 @@
         <link rel="Stylesheet" href="styles.css">
     </head>
     <body>
+        
+<?php
+            ini_set('display_errors', 1);
+            error_reporting(E_ALL);
+            include './video.php';
+            $a = new youtube('ABCD', 'https://www.youtube.com/embed/m-JA83K_F8A?si=0WbexdF_PU34Uh0E');
+            $b = $a->getHTMLCode();
+            echo $b;
+        ?>
         <figure>
             <figcaption>Youtube | Full HP Ahri.exe</figcaption>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Xz-GkFRK-BY?si=h9tKZLcSBDcDa2rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
@@ -110,6 +119,7 @@
         <figure>
             <figcaption>Youtube | [4K] One Rat Spinning to the Free Bird Solo 10 HOURS (FIXED)</figcaption>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/tvkxupwbFLk?si=Ee-W93EaxoiiRaUO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
-        </figure>
+        </figure><br>
     </body>
 </html>
+
