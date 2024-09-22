@@ -47,6 +47,3 @@ class vimeo extends film{
                 </figure><br>\n";
     }
 }
-
-$a = new youtube('ABCD', 'https://www.youtube.com/embed/m-JA83K_F8A?si=0WbexdF_PU34Uh0E');
-echo $a->getHTMLCode();

@@ -8,13 +8,12 @@
     </head>
     <body>
         
-<?php
+        <?php
             ini_set('display_errors', 1);
             error_reporting(E_ALL);
             include './video.php';
-            $a = new youtube('ABCD', 'https://www.youtube.com/embed/m-JA83K_F8A?si=0WbexdF_PU34Uh0E');
-            $b = $a->getHTMLCode();
-            echo $b;
+            $a = new youtube('Leck eier bernhard', 'https://www.youtube.com/embed/m-JA83K_F8A?si=0WbexdF_PU34Uh0E');
+            echo $a->getHTMLCode();
         ?>
         <figure>
             <figcaption>Youtube | Full HP Ahri.exe</figcaption>
