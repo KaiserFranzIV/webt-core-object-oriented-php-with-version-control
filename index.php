@@ -7,17 +7,22 @@
         <link rel="Stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <h1>PHP Video Loader</h1>
         <?php
-            ini_set('display_errors', 1);
-            error_reporting(E_ALL);
             include './video.php';
-            $a = new youtube('Leck eier bernhard', 'https://www.youtube.com/embed/m-JA83K_F8A?si=0WbexdF_PU34Uh0E');
-            echo $a->getHTMLCode();
+            $a = [new youtube('Full HP Ahri.exe', 'https://www.youtube.com/embed/Xz-GkFRK-BY?si=h9tKZLcSBDcDa2rg'), new youtube('Top 5 Scariest Jumpscare', 'https://www.youtube.com/embed/i-01U8BW7vg?si=poRxfWHSS9RO82fa'), new youtube('1 hour of silence occasionally interrupted by Pikmin', 'https://www.youtube.com/embed/a56T2llZf_k?si=tPecktHdUpUUJGF1'), new youtube('Qualifying Highlights / 2024 Singapore Grand Prix', 'https://www.youtube.com/embed/JlTxsuYY2VY?si=ucAE1PlVoIeqvoBQ'), new youtube('meine neue ENTSCHULDIGUNG an APORED 12', 'https://www.youtube.com/embed/NsZmJtAvqBE?si=HeEoxiHET7x7dqL_')];
+            $b = [new vimeo('Red Wine', 'https://player.vimeo.com/video/1004087384?badge=0&amp'), new vimeo('The Doll', 'https://player.vimeo.com/video/780891534?badge=0&amp'), new vimeo('All Gucci My Broski', 'https://player.vimeo.com/video/999408349?badge=0&amp'), new vimeo('Hot Mother','https://player.vimeo.com/video/756746901?badge=0&amp'), new vimeo('Bad Omens', 'https://player.vimeo.com/video/1010606796?badge=0&amp')];
+            foreach($b as $vid){
+                echo $vid->getHTMLCode();
+            }
+            foreach($a as $vid){
+                echo $vid->getHTMLCode();
+            }
         ?>
+        <h1>Statische Website</h1>
         <figure>
             <figcaption>Youtube | Full HP Ahri.exe</figcaption>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xz-GkFRK-BY?si=h9tKZLcSBDcDa2rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xz-GkFRK-BY?si=h9tKZLcSBDcDa2rg" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
         </figure>
 
         <figure>
